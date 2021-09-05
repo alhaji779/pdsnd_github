@@ -16,7 +16,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Welcome to my first python project. Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         print('\nPlease Enter the city you like to view')
@@ -55,7 +55,7 @@ def get_filters():
     print('-'*80)
     print('*'*40)
     print('-'*80)
-    print("Preparing info for {} on {} of {} 2017 ".format(city.title(),day,month))
+    print(f"Preparing info for {city.title()} on {day} of {month} 2017 ")
     return city, month, day
 
 
@@ -122,7 +122,7 @@ def time_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*80)
-    print('*'*40)
+    print('/'*40)
     print('-'*80)
 
 
@@ -147,7 +147,7 @@ def station_stats(df):
     print("Most commonly used frequent combination are \n {}".format(frequent_com))
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*80)
-    print('*'*40)
+    print('/'*40)
     print('-'*80)
 
 
@@ -170,7 +170,7 @@ def trip_duration_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*80)
-    print('*'*40)
+    print('/'*40)
     print('-'*80)
 
 
@@ -206,7 +206,7 @@ def user_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40 + '*'*20 + '-'*40)
+    print('-'*40 + '/'*20 + '-'*40)
     
 def raw_data(df):
     """ This function displays the first 5 raw data from the df file selected by the user. On request, the user can continously view more raw data

@@ -209,7 +209,7 @@ def user_stats(df):
     print('-'*40 + '*'*20 + '-'*40)
     
 def raw_data(df):
-    """ This function allows the user view raw data from the df file. On request, the user can continously view more raw data
+    """ This function displays the first 5 raw data from the df file selected by the user. On request, the user can continously view more raw data
     """
     extra = 0
     x_data = None

@@ -55,7 +55,7 @@ def get_filters():
     print('-'*80)
     print('*'*40)
     print('-'*80)
-    print("Preparing info for {} on {} of {} 2017 ".format(city.title(),day,month))
+    print(f"Preparing info for {city.title()} on {day} of {month} 2017 ")
     return city, month, day
 
 
